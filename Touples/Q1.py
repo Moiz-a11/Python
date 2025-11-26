@@ -19,4 +19,8 @@ for i in info:
     if(i[1]=="english"):
         print(i)
  # Q.3] create dictionary  (student , set of courses)
- 
+
+ dict={
+     "moiz":"math, phy",
+     
+ }

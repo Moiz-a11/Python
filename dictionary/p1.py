@@ -7,10 +7,10 @@ data ={
 
 }
 data["cgpa"] =9.5
-print(data)
+#print(data)
 # methods of dictionary
 
-print(data.keys())
+#print(data.keys())
 #.get()>> continues code safely
 
 data.update({
