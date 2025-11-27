@@ -6,6 +6,7 @@ data ={
     "subjects":["math","chemistry","physics"]
 
 }
+
 data["cgpa"] =9.5
 #print(data)
 # methods of dictionary
