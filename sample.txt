@@ -1,0 +1,4 @@
+this is a demp file
+to store some words
+for python activity
+that is to be solved by us.
