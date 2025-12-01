@@ -1,0 +1,7 @@
+
+// conda promts
+1. conda create -n primeenv
+2.conda activate primeenv       
+3.conda environments           >>  gives list of environments
+4.conda env list              
+5.conda env remove -n primeenv >> used for delete environment
