@@ -157,10 +157,78 @@
 # print(avg)
 #Q3] Inputtwolistsofintegersfromtheuser.Mergethemintoonelistandsorttheresult.
 
-list1 = list(map(int ,input("enter 1st list numbers :  ").split()))
-list2 = list (map(int , input("enter 2nd list numbers : ").split()))
+# list1 = list(map(int ,input("enter 1st list numbers :  ").split()))
+# list2 = list (map(int , input("enter 2nd list numbers : ").split()))
 
-merged_list = list1+list2
+# merged_list = list1+list2
 
-merged_list.sort()
-print("final list",merged_list) #sorted_list
+# merged_list.sort()
+# print("final list",merged_list) #sorted_list
+
+#Q4] Givenatupleofintegers,create:Q4•Atupleofallevennumbers•Atupleofalloddnumbers
+
+# numbers=(1,2,3,4,5,6,7,8,9,10)
+
+# even_tup = tuple(i for i in numbers if i % 2 == 0) # first i is for what to store
+# odd_tup = tuple( i for i in numbers if i % 2 != 0)
+
+# print(even_tup)
+# print(odd_tup)
+    
+# #Q5]
+# dict  =({
+#     "name":["ayan","moiz", "shadab","faiz","rehan"],
+#     "marks":[89,90,67,78,55],
+
+# })
+#Q6]Givenalistofwords:Q6words =["apple","banana","kiwi","cherry","mango"]Createadictionarythatmapseachwordtoitslength.Example:{"apple": 5, "banana": 6, "kiwi": 4, ...}
+
+# words = ["apple", "banana", "kiwi", "cherry", "mango"]
+# #word_length= len(words) # ans = 5
+# word_length= {word:len(words) for word in words}
+# print(word_length)
+
+#Q7] Writeaprogramthattakesastringfromtheuserandprintsthenumberofspacesinthestring
+
+# str = input("enter str here : ")
+# #count_spaces = str.count('z')
+# #count_spaces = str.count(" ")
+# print(count_spaces)
+
+# Q8]Writeaprogramtocheckwhethertwolistssharenocommonelements.share no common elements list1 =[1,2,3,4] list2 =[5,6,7,8]# share common elements list1 =[1,2,3] list2 =[3,4][-usesets]
+# def no_common_elements(list1,list2):
+#     set1=set(list1)
+#     set2=set(list2)
+
+#     if set1.isdisjoint(set2): # sets method , returns true or false
+#         print("no common elements")
+
+#     else:
+#         print("list share commen elements")
+
+
+
+# list1 = [1,2,3]
+# list2 = [3,5,6]
+
+# no_common_elements(list1,list2)
+
+#Q9]Givenalist,printallelementsthatappearmorethanonceinthelist.Q9[-usesets]
+# numbers =[11,2,3,4,5,11,2,7,2,6,6]
+# seen = set()
+# duplicates=set()
+
+# for i in numbers:
+#     if i in seen:
+#         duplicates.add(i)
+#     else:
+#         seen.add(i)  
+
+# print("elements apearing more than once", duplicates)
+
+#Q10] Asktheuserforastringandprint:Q10•Alluniquecharacters•Thecountofuniquecharacters
+
+# str = input("enter str here : ")
+# unique_char = set(str)
+# print(unique_char)
+# print(len(unique_char))
