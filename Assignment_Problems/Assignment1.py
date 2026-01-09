@@ -77,7 +77,6 @@
 #         count +=1
 
 
-
 # digits_of_num(312)
 # print("\n")
 # print("count = ",count)
@@ -117,6 +116,20 @@
 #     else:
 #          print("zero")
 
+# Q.8] calculator
+# def calculator(a,b,operator):
+#     if operator=='+':
+#         print("addition : ",a+b)
+#     elif operator=='*':
+#         print("multiplication : ",a*b)
+
+#     elif operator== '-':
+#         print("subtraction : ",a-b)
+
+#     elif operator=='/':
+#         print("division : ",a/b)
+
+# calculator(5,50,'-')
 
 #Q10]
 
@@ -241,68 +254,148 @@
 
 
 
-name=input("enter name ")
-age=int(input("enter age :"))
-print(f"hello {name} you are {age} years old")
+# name=input("enter name ")
+# age=int(input("enter age :"))
+# print(f"hello {name} you are {age} years old")
 
 
-num1 = int(input("enter num1:"))
-num2 = int(input("enter num2 : "))
-sum=num1+num2
-print(sum)
-prod=num1*num2
-print(prod)
+# num1 = int(input("enter num1:"))
+# num2 = int(input("enter num2 : "))
+# sum=num1+num2
+# print(sum)
+# prod=num1*num2
+# print(prod)
 
-num1=int(input("enter num1:"))
-num2=int(input("enter num2:"))
-num3=float(input("enter num3:"))
+# num1=int(input("enter num1:"))
+# num2=int(input("enter num2:"))
+# num3=float(input("enter num3:"))
 
-float_num1=float(num1)
-print(float_num1)
-float_num2 = float(num2)
+# float_num1=float(num1)
+# print(float_num1)
+# float_num2 = float(num2)
 
-avg = float_num1+float_num2+num3/3
-print(avg)
-
-
-str_num = input("enter a num :")
-
-str_int = int(str_num)
-str_float=float(str_num)
-str_Str = str(str_num)
-print(str_int)
-print(str_float)
-print(str_Str)
-
-print(type(str_int))
-print(type(str_float))
-print(type(str_Str))
+# avg = float_num1+float_num2+num3/3
+# print(avg)
 
 
-def swap(a,b):
-    temp = a
-    a = b
-    b = temp
-    print("a=",a)
-    print("b=",b)
+# str_num = input("enter a num :")
 
-a=20
-b=10
-swap(a,b)
+# str_int = int(str_num)
+# str_float=float(str_num)
+# str_Str = str(str_num)
+# print(str_int)
+# print(str_float)
+# print(str_Str)
+
+# print(type(str_int))
+# print(type(str_float))
+# print(type(str_Str))
 
 
-CelsiusTemp=input("entert temprature")
-float_CelsiusTemp = float(CelsiusTemp)
-FahrenheitTemp=(float_CelsiusTemp*(9/5))+32
-print("temp in fahrenheit = ",FahrenheitTemp)
+# def swap(a,b):
+#     temp = a
+#     a = b
+#     b = temp
+#     print("a=",a)
+#     print("b=",b)
 
-r = int(input("enter radius "))
-pi=3.14
-area = pi*r*r
-print(area)
+# a=20
+# b=10
+# swap(a,b)
 
-num = input("enter number")
-parts = num.split(".")
 
-print("integer_part",parts[0])
-print("decimal_part",parts[1])
+# CelsiusTemp=input("entert temprature")
+# float_CelsiusTemp = float(CelsiusTemp)
+# FahrenheitTemp=(float_CelsiusTemp*(9/5))+32
+# print("temp in fahrenheit = ",FahrenheitTemp)
+
+# r = int(input("enter radius "))
+# pi=3.14
+# area = pi*r*r
+# print(area)
+
+# num = input("enter number")
+# parts = num.split(".")
+
+# print("integer_part",parts[0])
+# print("decimal_part",parts[1])
+
+# salary =int(input("enter salary"))
+
+# if salary<=30000:
+#     print("tax rate = 5%")
+
+# elif salary>30000 and salary<=70000:
+#      print("tax rate = 15%")
+
+# elif salary>70000:
+#     print("ax rate = 25%")
+
+
+
+
+# def print_even_num(a,b):
+#     for i in range(a,b):
+#         if(i%2==0):
+#             print(i)
+
+# a=100
+# b=150
+# print_even_num(a,b)
+
+
+
+
+# count=0
+# def print_digits(n):
+#     while n>0:
+        
+#         digit = n%10
+#         print(digit)
+#         global count
+#         n=n//10
+#         count+=1
+
+
+# n=314
+# print_digits(n)
+# print("number of digits= ",count)
+
+
+
+# def count(n):
+#     n = abs(n)        # handle negative numbers , only It converts a negative number into positive
+#     count=0
+#     sum=0
+
+#     if n==0:
+#         return 1
+    
+#     while n>0:
+#         digit=n%10
+#         sum =sum+digit
+#         n=n//10
+#         count+=1
+
+#     return count , sum
+
+
+# print(count(611))
+
+
+# def divisible_by_three_and_five():
+#     for i in range(1,100):
+#         if i%3==0 and i%5==0:
+#             print(i)
+
+# divisible_by_three_and_five()
+
+
+
+# while True:
+#     num = input("enter number or Quit :")
+#     if num=="Quit":
+#         break
+
+# print(num)
+
