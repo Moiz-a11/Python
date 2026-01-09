@@ -155,6 +155,7 @@
 # count = len(list)
 # avg = total/count
 # print(avg)
+
 #Q3] Inputtwolistsofintegersfromtheuser.Mergethemintoonelistandsorttheresult.
 
 # list1 = list(map(int ,input("enter 1st list numbers :  ").split()))
@@ -232,3 +233,76 @@
 # unique_char = set(str)
 # print(unique_char)
 # print(len(unique_char))
+
+
+
+
+
+
+
+
+name=input("enter name ")
+age=int(input("enter age :"))
+print(f"hello {name} you are {age} years old")
+
+
+num1 = int(input("enter num1:"))
+num2 = int(input("enter num2 : "))
+sum=num1+num2
+print(sum)
+prod=num1*num2
+print(prod)
+
+num1=int(input("enter num1:"))
+num2=int(input("enter num2:"))
+num3=float(input("enter num3:"))
+
+float_num1=float(num1)
+print(float_num1)
+float_num2 = float(num2)
+
+avg = float_num1+float_num2+num3/3
+print(avg)
+
+
+str_num = input("enter a num :")
+
+str_int = int(str_num)
+str_float=float(str_num)
+str_Str = str(str_num)
+print(str_int)
+print(str_float)
+print(str_Str)
+
+print(type(str_int))
+print(type(str_float))
+print(type(str_Str))
+
+
+def swap(a,b):
+    temp = a
+    a = b
+    b = temp
+    print("a=",a)
+    print("b=",b)
+
+a=20
+b=10
+swap(a,b)
+
+
+CelsiusTemp=input("entert temprature")
+float_CelsiusTemp = float(CelsiusTemp)
+FahrenheitTemp=(float_CelsiusTemp*(9/5))+32
+print("temp in fahrenheit = ",FahrenheitTemp)
+
+r = int(input("enter radius "))
+pi=3.14
+area = pi*r*r
+print(area)
+
+num = input("enter number")
+parts = num.split(".")
+
+print("integer_part",parts[0])
+print("decimal_part",parts[1])
