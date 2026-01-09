@@ -399,3 +399,47 @@
 
 # print(num)
 
+
+
+# str = input("enter str :")
+
+# reversed_str = str[::-1]
+
+# if str==reversed_str:
+#     print("str is palindrome")
+
+# else:
+#     print("not palindrome")
+
+
+# nums =[1,2,3,4,5,6,7,8,9,10]
+# sum = sum(nums)
+# N=len(nums)
+# avg= sum/N
+# print("average is",avg)
+
+# list1 = list(map(int, input("Enter first list of integers: ").split()))
+# # Take second list input
+
+# list2 = list(map(int, input("Enter second list of integers: ").split()))
+# merged_list = list1+list2
+# merged_list.sort()
+# print(merged_list)
+
+
+# tupel = (1,2,3,4,5,6,7,8,9,10)
+# even_num=[]
+# odd_num=[]
+# for num in tupel:
+#     if(num%2==0):
+#         even_num.append(num)
+#     else:
+#         odd_num.append(num)
+
+# print(even_num)
+# print(odd_num)
+
+#Q.6]
+words = ["apple", "banana", "kiwi", "cherry", "mango"]
+word_len_dict = {i:len(i) for i in words}
+print(word_len_dict)
