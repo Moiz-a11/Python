@@ -166,35 +166,89 @@
 # print("circle area = ",c1.area())
 
 
-class Vehicle:
-    def __init__(self,brand,model):
+# class Vehicle:
+#     def __init__(self,brand,model):
         
-        self.brand=brand
-        self.model=model
+#         self.brand=brand
+#         self.model=model
 
 
-class Car(Vehicle):
-    def __init__(self,brand,model,seats):
-        super().__init__(brand, model)  # call base class constructor
-        self.seats=seats
+# class Car(Vehicle):
+#     def __init__(self,brand,model,seats):
+#         super().__init__(brand, model)  # call base class constructor
+#         self.seats=seats
 
-    def Display_info(self):
-        print("brand = ",self.brand)
-        print("modeol = ",self.model)
-
-
-class Bike(Vehicle):
-
-    def __init__(self,brand,model,engine):
-        super().__init__(brand, model)  # call base class constructor
-        self.engine=engine
+#     def Display_info(self):
+#         print("brand = ",self.brand)
+#         print("modeol = ",self.model)
 
 
+# class Bike(Vehicle):
 
-    def Display_info(self):
-        print("brand = ",self.brand)
-        print("modeol = ",self.model)
+#     def __init__(self,brand,model,engine):
+#         super().__init__(brand, model)  # call base class constructor
+#         self.engine=engine
 
 
-b1=Bike("yamaha","2022","high")
-b1.Display_info()
+
+#     def Display_info(self):
+#         print("brand = ",self.brand)
+#         print("modeol = ",self.model)
+
+
+# b1=Bike("yamaha","2022","high")
+# b1.Display_info()
+
+from abc import ABC, abstractmethod 
+
+# abc = Abstract Base Classes module in Python
+
+# ABC → used to create an abstract class
+
+# abstractmethod → decorator used to declare abstract methods
+
+class Employee(ABC):
+    
+    @abstractmethod
+    def Calculate_salary(self):
+        pass
+#     pass means do nothing
+
+# Used as a placeholder because:
+
+# Abstract methods do not contain logic
+
+# Actual implementation is given in subclasses
+
+class Intern(Employee):
+    def __init__(self,stipend):
+        self.stipend=stipend
+    def Calculate_salary(self):
+        return self.stipend
+ 
+
+class Full_time_employee(Employee):
+    def __init__(self,monthly_salary):
+        self.monthly_salary=monthly_salary
+
+    def Calculate_salary(self):
+        return self.monthly_salary
+       
+class Contract_employee(Employee):
+
+    def __init__(self,day_rate,days_worked):
+        self.day_rate=day_rate
+        self.days_worked=days_worked
+
+
+    def Calculate_salary(self):
+        return self.day_rate*self.days_worked
+    
+
+
+
+# e1=Intern(100000)
+# print(e1.Calculate_salary())
+
+e2=Contract_employee(5,2000)
+print(e2.Calculate_salary())
