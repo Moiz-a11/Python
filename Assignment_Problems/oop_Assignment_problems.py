@@ -110,7 +110,6 @@
 #             print("roll_no must betwee 1 and 100")
 
 
-
 #     def set_mark(self,mark):
 #         if mark>0:
 #             self.__mark=mark
@@ -166,12 +165,12 @@
 # print("circle area = ",c1.area())
 
 
+#Q.5]
 # class Vehicle:
 #     def __init__(self,brand,model):
         
 #         self.brand=brand
 #         self.model=model
-
 
 # class Car(Vehicle):
 #     def __init__(self,brand,model,seats):
@@ -182,7 +181,6 @@
 #         print("brand = ",self.brand)
 #         print("modeol = ",self.model)
 
-
 # class Bike(Vehicle):
 
 #     def __init__(self,brand,model,engine):
@@ -190,16 +188,14 @@
 #         self.engine=engine
 
 
-
 #     def Display_info(self):
 #         print("brand = ",self.brand)
 #         print("modeol = ",self.model)
 
-
 # b1=Bike("yamaha","2022","high")
 # b1.Display_info()
 
-from abc import ABC, abstractmethod 
+#from abc import ABC, abstractmethod 
 
 # abc = Abstract Base Classes module in Python
 
@@ -207,48 +203,98 @@ from abc import ABC, abstractmethod
 
 # abstractmethod → decorator used to declare abstract methods
 
-class Employee(ABC):
+
+#Q.6]
+
+#class Employee(ABC):
     
-    @abstractmethod
-    def Calculate_salary(self):
-        pass
+    #@abstractmethod
+    #def Calculate_salary(self):
+       # pass
+
 #     pass means do nothing
-
 # Used as a placeholder because:
-
 # Abstract methods do not contain logic
-
 # Actual implementation is given in subclasses
 
-class Intern(Employee):
-    def __init__(self,stipend):
-        self.stipend=stipend
-    def Calculate_salary(self):
-        return self.stipend
+# class Intern(Employee):
+#     def __init__(self,stipend):
+#         self.stipend=stipend
+#     def Calculate_salary(self):
+#         return self.stipend
  
+# class Full_time_employee(Employee):
+#     def __init__(self,monthly_salary):
+#         self.monthly_salary=monthly_salary
 
-class Full_time_employee(Employee):
-    def __init__(self,monthly_salary):
-        self.monthly_salary=monthly_salary
-
-    def Calculate_salary(self):
-        return self.monthly_salary
+#     def Calculate_salary(self):
+#         return self.monthly_salary
        
-class Contract_employee(Employee):
+# class Contract_employee(Employee):
 
-    def __init__(self,day_rate,days_worked):
-        self.day_rate=day_rate
-        self.days_worked=days_worked
+#     def __init__(self,day_rate,days_worked):
+#         self.day_rate=day_rate
+#         self.days_worked=days_worked
 
-
-    def Calculate_salary(self):
-        return self.day_rate*self.days_worked
-    
-
-
+#     def Calculate_salary(self):
+#         return self.day_rate*self.days_worked
 
 # e1=Intern(100000)
 # print(e1.Calculate_salary())
+# e2=Contract_employee(5,2000)
+# print(e2.Calculate_salary())
 
-e2=Contract_employee(5,2000)
-print(e2.Calculate_salary())
+
+#Q.7]
+
+# class Person:
+#     def __init__(self,name,age=None,address=None): # Default parameters allow arguments to be optional.
+#         self.name =name,
+#         self.age =age,
+#         self.address =address
+
+
+#     def display(self):
+#         print("name=",self.name)
+#         print("age=",self.age)
+#         print("address=",self.address)
+
+# p1 = Person("moiz",20)
+# p1.display()
+
+#Q.8]
+# class Player:
+#     Player_count=0
+
+#     def __init__(self,name,level):
+#         self.name=name
+#         self.level=level
+#         Player.Player_count+=1
+
+
+
+# p1=Player("moiz",6)
+# p2=Player("moiz",6)
+# print(p1.Player_count)
+
+#Q.9]
+# class Herbivore:
+
+#     def display_herbivore(self):
+#         print("haryali khate")
+
+# class Carnivore:
+#     def display_carnivore(self):
+#          print("gosh khate")
+
+# class Omnivore:
+#     def display_omnivore(self):
+#         print("eat both")
+
+# class Bear(Herbivore,Carnivore,Omnivore):
+#      def display_Omnivore():
+#         print("eat both")
+
+# b1=Bear()
+# b1.display_carnivore()
+# b1.display_omnivore()
